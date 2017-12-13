@@ -1,4 +1,6 @@
-{% include "./layout/header.html" %}
-
-<div class="group">hello, world</div>
-<div id="root"></div>
+{% include "./layout/head.html" %}
+<div class="wrapper">
+  {% include "./layout/header.html" %}
+  {% include "./layout/content.html" %}
+  {% include "./layout/footer.html" %}
+</div>

@@ -1,3 +1,53 @@
-.group {
-  color: green;
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 40px auto 40px;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.center {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+/*
+.search-form {
+  grid-column-start: 1;
+  grid-column-end: 1;
+} */
+
+.search {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.content {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: row3-end;
 }

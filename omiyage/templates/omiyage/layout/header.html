@@ -1,9 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<head>
-<title>Title for development</title>
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="{% static 'js/app.js' %}"></script>
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-</head>
+<div class="logo">Logo</div>
+<div class="center">
+  <form style="display: grid; grid-template-columns: 6fr 1fr;">
+    <input class="search-form" type="text" style="grid-column: 1 / 2;">
+    <button type="button" class="btn btn-secondary" style="grid-column: 2 / 2;">検索</button>
+  </form>
+</div>
+<div class="search">Search</div>
