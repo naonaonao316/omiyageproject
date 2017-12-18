@@ -1,2 +1,28 @@
+{% load static %}
+<div class="theme-picture" style="background-image: url({% static 'img/main_image.jpg'%});"></div>
+<div class="search">
+  <div class="wording">
+    <div class="wording-content">
+      その感動、広めてみませんか？
+    </div>
+  </div>
+  <form class="search-form">
+    <div class="input-forms product-name">
+      <input class="form-control" type="text" placeholder="商品名を入力してください">
+    </div>
+    <div class="input-forms prefecture-name">
+      <select class="form-control">
+        <option>都道府県を選んでください</option>
+        <option>北海道</option>
+        <option>青森</option>
+        <option>岩手</option>
+        <option>新潟</option>
+      </select>
+    </div>
+    <div class="input-forms search-button">
+      <button type="button" class="btn btn-secondary">検索</button>
+    </div>
+  </form>
+</div>
 <div class="sidebar">Sidebar</div>
 <div class="content">Content</div>

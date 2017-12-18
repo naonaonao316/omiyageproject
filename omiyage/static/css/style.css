@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 200px auto 200px;
-  grid-template-rows: 40px auto 40px;
+  grid-template-rows: 120px 320px auto 140px;
 }
 
 .logo {
@@ -18,36 +18,110 @@
   grid-row-end: 1;
 }
 
-/*
-.search-form {
-  grid-column-start: 1;
-  grid-column-end: 1;
-} */
-
 .search {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.wording {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 110px
+}
+
+.wording-content {
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  align-self: center;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:
+  ". a .";
+}
+
+.input-forms {
+  align-self: center;
+}
+
+.input-forms.product-name {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.input-forms.prefecture-name {
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
+}
+
+.input-forms.search-button {
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.theme-picture {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .sidebar {
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 
 .content {
   grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 
 .footer {
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: row3-end;
+  background-color: #e4b37c;
+}
+
+.footer-content {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: row3-end;
+}
+
+.footer-wording {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.footer-word {
+  color: #ffffff;
+}
+
+.footer-word-group {
+  justify-self: center;
+}
+
+.footer-bullet-points {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footer-bullet-points > li {
+  color: #804d00;
 }
