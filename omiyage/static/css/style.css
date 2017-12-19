@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 200px auto 200px;
   grid-template-rows: 120px 320px auto 140px;
+  grid-row-gap: 10px;
 }
 
 .logo {
@@ -82,9 +83,16 @@
 
 .content {
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 3;
+}
+
+.content-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 250px;
+  grid-gap: 10px;
 }
 
 .footer {
